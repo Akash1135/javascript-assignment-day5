@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 Assignment 2</title>
+</head>
+<body>
+    <h2>Class USer</h2>
+    <script>
+        class User{
+            constructor(name,age,email){
+                this.name =name;
+                this.age = age;
+                this.email = email;
+
+            }
+
+        }
+        class Moderator extends User{
+            constructor(name,age,email,addCoins,removeCoins){
+                super(name,age,email);
+                this.addCoins = addCoins;
+                this.removeCoins = removeCoins;
+
+            }
+        }
+        class Admin extends User,Moderator{
+            constructor(name,age,email,addCoins,removeCoins)
+            {
+                super();
+
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
